@@ -157,8 +157,9 @@
 - ✅ components/common/Badge.tsx
 - ✅ components/layout/Header.tsx
 
-### Páginas (7 arquivos)
+### Páginas (8 arquivos)
 - ✅ pages/Landing.tsx
+- ✅ pages/Login.tsx (NOVO)
 - ✅ pages/Onboarding.tsx
 - ✅ pages/Dashboard.tsx
 - ✅ pages/SymptomLog.tsx
@@ -238,13 +239,13 @@
 
 | Métrica | Valor |
 |---------|-------|
-| Páginas | 7 |
+| Páginas | 8 |
 | Componentes | 6 |
 | Contextos | 1 |
 | Utilitários | 2 |
-| Arquivos TypeScript | 16 |
-| Linhas de Código | 2.500+ |
-| Funcionalidades | 25+ |
+| Arquivos TypeScript | 17 |
+| Linhas de Código | 2.700+ |
+| Funcionalidades | 26+ |
 
 ## 🚀 Status Final
 

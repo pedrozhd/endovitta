@@ -23,7 +23,14 @@ Criar uma plataforma acolhedora e intuitiva que permita mulheres com endometrios
 - Hero section com apresentação do app
 - Cards explicativos sobre endometriose
 - Benefícios do aplicativo
-- CTA (Call-to-Action) para começar
+- Botões: "Começar Agora" (novo cadastro) e "Acessar Conta" (login)
+
+### 1.5. **Login** 🔐
+- Página de login para usuárias cadastradas
+- Validação de email
+- Mensagens de erro claras
+- Loading state
+- Redirecionamento automático para Dashboard
 
 ### 2. **Onboarding com Formulário Multi-etapa** 📝
 - Etapa 1: Dados básicos (nome, idade, email)
@@ -152,9 +159,17 @@ Todos os dados são salvos no localStorage e persistem entre sessões.
 
 ## 🔄 Fluxo de Navegação
 
+### Para Novas Usuárias
 1. **Landing** → Apresentação do app
 2. **Onboarding** → Cadastro inicial (4 etapas)
 3. **Dashboard** → Visão geral da saúde
+
+### Para Usuárias Cadastradas
+1. **Landing** → Apresentação do app
+2. **Login** → Acessar conta com email
+3. **Dashboard** → Visão geral da saúde
+
+### Após Login
 4. **Symptom Log** → Registrar sintomas diários
 5. **History** → Acompanhar evolução
 6. **Education** → Aprender sobre endometriose

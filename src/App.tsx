@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AppProvider, useApp } from './contexts/AppContext';
 import { Header } from './components/layout/Header';
 import { Landing } from './pages/Landing';
+import { Login } from './pages/Login';
 import { Onboarding } from './pages/Onboarding';
 import { Dashboard } from './pages/Dashboard';
 import { SymptomLog } from './pages/SymptomLog';
@@ -18,26 +19,27 @@ const AppContent: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/onboarding" element={<Onboarding />} />
         <Route
           path="/dashboard"
-          element={isOnboarded ? <Dashboard /> : <Navigate to="/onboarding" />}
+          element={isOnboarded ? <Dashboard /> : <Navigate to="/login" />}
         />
         <Route
           path="/symptom-log"
-          element={isOnboarded ? <SymptomLog /> : <Navigate to="/onboarding" />}
+          element={isOnboarded ? <SymptomLog /> : <Navigate to="/login" />}
         />
         <Route
           path="/history"
-          element={isOnboarded ? <History /> : <Navigate to="/onboarding" />}
+          element={isOnboarded ? <History /> : <Navigate to="/login" />}
         />
         <Route
           path="/education"
-          element={isOnboarded ? <Education /> : <Navigate to="/onboarding" />}
+          element={isOnboarded ? <Education /> : <Navigate to="/login" />}
         />
         <Route
           path="/profile"
-          element={isOnboarded ? <Profile /> : <Navigate to="/onboarding" />}
+          element={isOnboarded ? <Profile /> : <Navigate to="/login" />}
         />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

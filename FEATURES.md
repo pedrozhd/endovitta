@@ -2,6 +2,54 @@
 
 ## 📱 Páginas e Funcionalidades
 
+### 0. 🔐 Login Page (`/login`)
+
+**Objetivo**: Permitir que usuárias cadastradas façam login
+
+**Componentes**:
+1. **Logo e Título**
+   - Ícone: 💜
+   - Título: "EndoVitta"
+   - Subtítulo: "Bem-vinda de volta!"
+
+2. **Campo de Email**
+   - Input de email
+   - Placeholder: "seu@email.com"
+   - Validação: Campo obrigatório
+
+3. **Botão de Entrar**
+   - Verifica se o email existe no localStorage
+   - Loading state durante autenticação
+   - Redireciona para Dashboard se bem-sucedido
+
+4. **Mensagens de Erro**
+   - "Nenhuma conta encontrada"
+   - "Email não encontrado"
+   - Exibidas em card com fundo vermelho
+
+5. **Divider Visual**
+   - Separador com "ou"
+
+6. **Botão Criar Nova Conta**
+   - Leva para Onboarding
+
+7. **Card Informativo**
+   - Dica para primeira vez
+   - Instruções de cadastro
+
+8. **Botão Voltar**
+   - Retorna à Landing Page
+
+**Funcionalidades**:
+- ✅ Autenticação simulada
+- ✅ Validação de email
+- ✅ Mensagens de erro claras
+- ✅ Loading state
+- ✅ Redirecionamento automático
+- ✅ Design responsivo
+
+---
+
 ### 1. 🏠 Landing Page (`/`)
 
 **Objetivo**: Apresentar o aplicativo e seus benefícios

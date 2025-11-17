@@ -21,13 +21,22 @@ export const Landing: React.FC = () => {
           <p className="text-lg text-text/60 mb-8 max-w-2xl mx-auto">
             Registre seus sintomas, acompanhe sua evolução e receba orientações personalizadas para melhorar sua qualidade de vida.
           </p>
-          <Button
-            variant="primary"
-            onClick={() => navigate('/onboarding')}
-            className="text-lg px-8 py-4"
-          >
-            Começar Agora
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              variant="primary"
+              onClick={() => navigate('/onboarding')}
+              className="text-lg px-8 py-4"
+            >
+              Começar Agora
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => navigate('/login')}
+              className="text-lg px-8 py-4"
+            >
+              Acessar Conta
+            </Button>
+          </div>
         </div>
       </section>
 
