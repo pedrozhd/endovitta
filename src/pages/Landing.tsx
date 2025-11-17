@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
+import logo from '../assets/logo.png';
 
 export const Landing: React.FC = () => {
   const navigate = useNavigate();
@@ -11,10 +12,8 @@ export const Landing: React.FC = () => {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="text-center">
-          <div className="text-6xl mb-6">💜</div>
-          <h1 className="text-5xl sm:text-6xl font-bold text-text mb-6">
-            EndoVitta
-          </h1>
+          <img src={logo} alt="EndoVitta Logo" className="h-64 w-64 mx-auto mb-8" />
+          <h1 className="sr-only">EndoVitta</h1>
           <p className="text-xl sm:text-2xl text-text/70 mb-4">
             Seu companheiro no monitoramento da endometriose
           </p>

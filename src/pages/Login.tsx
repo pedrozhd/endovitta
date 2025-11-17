@@ -4,6 +4,7 @@ import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { useApp } from '../contexts/AppContext';
 import { storage } from '../utils/storage';
+import logo from '../assets/logo.png';
 
 export const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ export const Login: React.FC = () => {
       <div className="w-full max-w-md">
         {/* Logo Section */}
         <div className="text-center mb-8">
-          <div className="text-6xl mb-4">💜</div>
+          <img src={logo} alt="EndoVitta Logo" className="h-20 w-20 mx-auto mb-4" />
           <h1 className="text-4xl font-bold text-text mb-2">EndoVitta</h1>
           <p className="text-text/70">Bem-vinda de volta!</p>
         </div>

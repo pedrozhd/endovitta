@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, LogOut } from 'lucide-react';
 import { useApp } from '../../contexts/AppContext';
+import logo from '../../assets/logo.png';
 
 export const Header: React.FC = () => {
   const { user, logout } = useApp();
@@ -16,9 +17,8 @@ export const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="text-3xl">💜</div>
-          <h1 className="text-2xl font-bold text-primary">EndoVitta</h1>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="EndoVitta Logo" className="h-28 w-28 hover:scale-110 transition-transform" />
         </Link>
 
         {user && (
