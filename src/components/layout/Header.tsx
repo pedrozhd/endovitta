@@ -64,6 +64,13 @@ export const Header: React.FC = () => {
                     Educação
                   </Link>
                   <Link
+                    to="/products"
+                    className="block px-4 py-2 hover:bg-gray-100 transition"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    🛍️ Loja
+                  </Link>
+                  <Link
                     to="/profile"
                     className="block px-4 py-2 hover:bg-gray-100 transition"
                     onClick={() => setMenuOpen(false)}

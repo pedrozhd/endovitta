@@ -9,6 +9,7 @@ import { Dashboard } from './pages/Dashboard';
 import { SymptomLog } from './pages/SymptomLog';
 import { History } from './pages/History';
 import { Education } from './pages/Education';
+import { Products } from './pages/Products';
 import { Profile } from './pages/Profile';
 
 const AppContent: React.FC = () => {
@@ -36,6 +37,10 @@ const AppContent: React.FC = () => {
         <Route
           path="/education"
           element={isOnboarded ? <Education /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/products"
+          element={isOnboarded ? <Products /> : <Navigate to="/login" />}
         />
         <Route
           path="/profile"

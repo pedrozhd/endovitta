@@ -68,6 +68,15 @@ Criar uma plataforma acolhedora e intuitiva que permita mulheres com endometrios
 - Modal com informações detalhadas
 - Temas: O que é endometriose, alimentação, exercícios, gerenciamento de dor, saúde mental, quando procurar ajuda
 
+### 6.5. **Loja de Produtos** 🛍️
+- 5 produtos selecionados para endometriose
+- Categorias: roupas terapêuticas, coletor menstrual, compressa térmica, chás funcionais
+- Filtros por categoria
+- Cards com imagem, preço e avaliações
+- Modal com detalhes completos e benefícios
+- Sistema de favoritos
+- Carrinho de compras com notificações
+
 ### 7. **Perfil da Usuária** 👤
 - Visualização de dados cadastrais
 - Edição de informações
@@ -97,11 +106,13 @@ src/
 │   └── layout/          # Header
 ├── pages/
 │   ├── Landing.tsx
+│   ├── Login.tsx
 │   ├── Onboarding.tsx
 │   ├── Dashboard.tsx
 │   ├── SymptomLog.tsx
 │   ├── History.tsx
 │   ├── Education.tsx
+│   ├── Products.tsx
 │   └── Profile.tsx
 ├── contexts/
 │   └── AppContext.tsx   # Context API para estado global
@@ -173,7 +184,8 @@ Todos os dados são salvos no localStorage e persistem entre sessões.
 4. **Symptom Log** → Registrar sintomas diários
 5. **History** → Acompanhar evolução
 6. **Education** → Aprender sobre endometriose
-7. **Profile** → Gerenciar dados e planos
+7. **Products** → Explorar loja de produtos
+8. **Profile** → Gerenciar dados e planos
 
 ## 💾 Persistência de Dados
 

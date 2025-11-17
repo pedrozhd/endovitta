@@ -10,13 +10,13 @@ Criar um protótipo visual e interativo do aplicativo EndoVitta para demonstraç
 
 | Métrica | Quantidade |
 |---------|-----------|
-| Páginas | 7 |
+| Páginas | 9 |
 | Componentes Reutilizáveis | 6 |
 | Contextos | 1 |
 | Utilitários | 2 |
-| Arquivos TypeScript | 16 |
-| Linhas de Código | ~2.500+ |
-| Funcionalidades | 25+ |
+| Arquivos TypeScript | 18 |
+| Linhas de Código | ~3.100+ |
+| Funcionalidades | 30+ |
 
 ## 🏗️ Arquitetura
 
@@ -34,11 +34,13 @@ EndoVitta/
 │   │       └── Header.tsx (navegação principal)
 │   ├── pages/
 │   │   ├── Landing.tsx (apresentação)
+│   │   ├── Login.tsx (autenticação)
 │   │   ├── Onboarding.tsx (cadastro multi-etapa)
 │   │   ├── Dashboard.tsx (visão geral)
 │   │   ├── SymptomLog.tsx (registro diário)
 │   │   ├── History.tsx (histórico)
 │   │   ├── Education.tsx (educação)
+│   │   ├── Products.tsx (loja de produtos)
 │   │   └── Profile.tsx (perfil)
 │   ├── contexts/
 │   │   └── AppContext.tsx (estado global)
@@ -264,18 +266,33 @@ Dashboard (/dashboard)
 - Filtros por período
 - Padrões identificados
 
-### ✅ Educação
+### Educação
 - 6 conteúdos educacionais
 - Modal com detalhes
 - Informações acessíveis
 
-### ✅ Perfil & Configurações
+### Centro Educacional
+- 6 cards educacionais
+- Modal com conteúdo detalhado
+- Temas: endometriose, alimentação, exercícios, dor, saúde mental, quando procurar ajuda
+
+### Loja de Produtos
+- 5 produtos selecionados
+- Categorias: roupas, coletor, compressa, chás
+- Filtros por categoria
+- Cards com imagem, preço, rating
+- Modal com detalhes completos
+- Sistema de favoritos
+- Carrinho de compras
+- Notificações visuais
+
+### Perfil & Configurações
 - Visualização de dados
 - Edição de informações
 - Planos disponíveis
 - Logout
 
-### ✅ UX/UI
+### UX/UI
 - Design responsivo
 - Animações suaves
 - Feedback visual
