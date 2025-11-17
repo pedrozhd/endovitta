@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
     <header className="bg-white shadow-md sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="EndoVitta Logo" className="h-28 w-28 hover:scale-110 transition-transform" />
+          <img src={logo} alt="EndoVitta Logo" className="h-24 w-32 hover:scale-110 transition-transform" />
         </Link>
 
         {user && (
